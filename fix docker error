@@ -1,0 +1,34 @@
+ usermod -aG root jenkins
+ groups jenkins
+ su jenkins
+ usermod -aG docker jenkins
+ usermod -aG root docker
+ usermod -aG  docker root
+ usermod -aG  docker ubuntu
+ docker
+ sudo usermod -aG docker ubuntu
+ apt install docker
+ sudo usermod -aG docker ubuntu
+ sudo usermod -aG  ubuntu docker
+ useradd docker
+ sudo usermod -aG  ubuntu docker
+ sudo usermod -aG docker ubuntu
+ mkdir /opt/jenkins
+ chown -r ubuntu:ubuntu /opt/jenkins/
+ chown -R ubuntu:ubuntu /opt/jenkins/
+ ls -lrth  /opt/jenkins
+ ls -la /opt/jenkins
+ groups
+ docker ps
+ clear
+ sudo apt update
+ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ sudo apt update
+ apt-cache policy docker-ce
+ sudo apt install docker-ce
+ sudo systemctl status docker
+ sudo systemctl start docker
+ docker ps
+ chmod 777 /var/run/docker.sock
+  
